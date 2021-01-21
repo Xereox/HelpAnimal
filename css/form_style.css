@@ -1,0 +1,8 @@
+.connection__phones {
+    list-style: none;
+    padding: 0;
+}
+
+.phone input {
+    width: 100px;
+}

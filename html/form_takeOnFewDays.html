@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/form_style.css">
+    <title>Animal help</title>
+</head>
+<body>
+    <header class="header-title">
+        <h1 class="header-title__text">Забрать на передержку</h1>
+    </header>
+    <main>
+        <section class="pet">
+            <figure class="pet__img">
+                <img src="../img/pet-img.jpg">
+            </figure>
+            <h2 class="pet__name">
+                Моник
+            </h2>
+            <p class="pet__about">
+                Мальчик, 7 месяцев
+            </p>
+        </section>
+        <section class="form-title">
+            <p class="form-title__text">Оставьте информацию о себе. Мы позвоним вам и договоримся, когда вы сможете забрать себе питомца на передержку.</p>
+        </section>
+        <form action="#" method="post">
+            <section class="name">
+                <input type="text" name="name" minlength="5" maxlength="30" placeholder="Фамилия и имя">
+            </section>
+            <section class="phone">
+                <input type="tel" name="phone" id="phone" required minlength="4" placeholder="Номер телефона" pattern="375[0-9]{9}">
+                <p class="">Обязательное поле для заполнения</p>
+            </section>
+            <section class="comment">
+                <textarea name="other" id="other" cols="30" rows="5" placeholder="Замечания"></textarea>
+            </section>
+            <section class="connection">
+                <ul class="connection__phones">
+                    <li class="connection__phone">Если у вас есть вопросы, можете позвонить нам:</li>
+                    <li class="connection__phone">+375 (33) 6237879 Лена</li>
+                    <li class="connection__phone">+375 (29) 7877791 Ольга</li>
+                    <li class="connection__phone">+375 (29) 5837015 Рита</li>
+                </ul>
+            </section>
+            <section class="about">
+                <p class="about__text">Наши волонтеры будут активно искать будущий дом хвостику, пока вы помогаете нам с передержкой.</p>
+                <p class="about__text">Спасибо за помощь!</p>
+            </section>
+            <section class="buttons">
+                <div class="buttons_submit">
+                    <input type="submit" value="Отправить">
+                </div>
+                <div class="buttons_cancel">
+                    <input type="button" value="Отмена">
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

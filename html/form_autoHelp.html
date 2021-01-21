@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/form_style.css">
+    <title>Animal help</title>
+</head>
+<body>
+    <header class="header-title">
+        <h1 class="header-title__text">Автопомощь</h1>
+    </header>
+    <main>
+        <section class="form__title">
+            <h2 class="form-title__main-text">
+                Заявка
+            </h2>
+            <p class="form-title__text">
+                Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь в транспортировке, мы позвоним вам.
+            </p>
+        </section>
+        <form action="#" method="post">
+            <section class="name">
+                <input type="text" name="name" minlength="5" maxlength="30" placeholder="Фамилия и имя">
+            </section>
+            <section class="phone">
+                <input type="tel" name="phone" id="phone" required minlength="4" placeholder="Номер телефона" pattern="375[0-9]{9}">
+                <p class="">Обязательное поле для заполнения</p>
+            </section>
+            <section class="datetime">
+                <p class="datetime__title">
+                    Выберите удобное время, когда вы сможете нам помочь
+                </p>
+                <input type="date" name="date" id="date">
+                <input type="time" name="time">
+            </section>
+            <section class="date-add">
+                <input type="button" value="+" id="date-add__button">
+                <label for="date-add__button">Добавить дату и время</label>
+            </section>
+            <section class="choose-day">
+                <input type="checkbox" name="choosen-day" id="weekday" values="weekday">
+                <label for="weekday">В любой будний день</label>
+                <input type="checkbox" name="choosen-day" id="weekend" value="weekend">
+                <label for="weekend">В любой выходной день</label>
+            </section>
+            <section class="choose-help">
+                <input type="checkbox" name="choosen-help" value="variant1" id="variant1">
+                <label for="variant1">Доставка еды, медикаментов и других небольших вещей</label>
+                <input type="checkbox" name="choosen-help" value="variant2" id="variant2">
+                <label for="variant2">Доставка сена или соломы, строительных материлов для будок и других крупногабаритных вещей</label>
+                <input type="checkbox" name="choosen-help" value="variant3" id="variant3">
+                <label for="variant3">Транспортировка небольших собак и котов</label>
+                <input type="checkbox" name="choosen-help" value="variant4" id="variant4">
+                <label for="variant4">Транспортировка больших собак</label>
+            </section>
+            <section class="comment">
+                <textarea name="other" id="other" cols="30" rows="5" placeholder="Замечания"></textarea>
+            </section>
+            <section class="buttons">
+                <div class="buttons__submit">
+                    <input type="submit" value="Оставить заявку">
+                </div>
+                <div class="buttons__cancel">
+                    <input type="button" value="Отмена">
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
